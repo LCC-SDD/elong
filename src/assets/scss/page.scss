@@ -1,0 +1,564 @@
+@import './tongyongyangshi.scss';
+.page{
+	@include wg(100%,100%);
+	position: relative;
+	.bannerlb{
+		@include wg(100%,380px);
+		.swiper-container{
+			@include wg(100%,380px);
+			.swiper-wrapper{
+				@include wg(100%,380px);
+				.swiper-slide1{
+					@include wg(100%,380px);
+					background: url("../../assets/img/images151625751172720.jpg") no-repeat center;
+					background-size: cover; 
+				}
+				.swiper-slide2{
+					@include wg(100%,380px);
+					background: url("../../assets/img/images149371011284238.jpg") no-repeat center;
+					background-size: cover;
+				}
+				.swiper-slide3{
+					@include wg(100%,380px);
+					background: url("../../assets/img/images149371001863360.jpg") no-repeat center;
+					background-size: cover; 
+				}
+				.swiper-slide4{
+					@include wg(100%,380px);
+					background: url("../../assets/img/images151625751172720.jpg") no-repeat center;
+					background-size: cover; 
+				}
+				.swiper-slide5{
+					@include wg(100%,380px);
+					background: url("../../assets/img/images149370993339413.jpg") no-repeat center;
+					background-size: cover; 
+				}
+			}
+
+		}
+	}
+	.bannerlb:first-child{
+		position: absolute;
+		top:40px;
+		left:75px;
+		@include wg(600px,300px);
+		background: #fff;
+		z-index: 999;
+		.left{
+			@include wg(100px,300px);
+			background: #f3f3f3;
+			float: left;
+			outline-right:1px solid #e1e1e1;
+			text-align: center;
+			.emty{
+				@include wg(100px,59px);
+				line-height:59px;
+				color:#555;
+				@include fs(14px);
+				border-bottom: 1px solid #e1e1e1;
+			}
+		}
+		.right{
+			@include wg(500px,300px);
+			float: right;
+			position: relative;
+			.cate{
+				@include wg(500px,300px);
+				background: #fff;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	.record{
+		@include wg(100%,32px);
+		.no_record_inf{
+			@include wg(215px,32px);
+    		border-radius: 20px;
+    		border: 1px solid #ccc;
+    		@include ml(75px);
+    		@include mt(20px);
+    		a{
+    			color: #37e;
+    			@include fs(14px);
+    			line-height: 32px;
+    			@include ml(40px);
+    			&:hover{
+    				color: #f55;
+    			}
+    		}
+    		em{
+    			@include fs(14px);
+    			line-height: 32px;
+    			@include ml(-3px);
+    		}
+		}
+	}
+	.fold{
+		@include wg(100%,260px);
+		@include mt(20px);
+		.fold_wrap{
+			width: 1200px;
+			height: 260px;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    ul{
+		    	@include wg(1200px,260px);
+		    	display: flex;
+		    	text-align: center;
+		    	.clifex{
+					flex: 1;
+					line-height:260px;
+					background: rgba(255,255,255,0.5);
+					h4{
+						    color: #fff;
+						    width: 30px;
+						    margin: 0 auto;
+						    display: block;
+						    font: 30px/30px Microsoft Yahei;
+						    position: relative;
+						    padding: 30px 0 0 0;
+					}
+					&:hover{
+						flex:3;
+						transition: all 0.5s;
+					}
+		    	}
+		    	.clifex:hover h4{
+		    		display: none;
+		    	}
+		    	.clifex1{
+		    		background: url("../../assets/img/20150422_ifold1.jpg") no-repeat center;
+		    	}
+		    	.clifex2{
+		    		background: url("../../assets/img/20150120_ifold2.jpg") no-repeat center;
+		    	}
+		    	.clifex3{
+		    		background: url("../../assets/img/20150120_ifold3.jpg") no-repeat center;
+		    	}
+		    	.clifex4{
+		    		background: url("../../assets/img/20150120_ifold4.jpg") no-repeat center;
+		    	}
+		    	.clifex5{
+		    		background: url("../../assets/img/20150120_ifold5.jpg") no-repeat center;
+		    	}
+		    	.clifex6{
+		    		background: url("../../assets/img/20150120_ifold6.jpg") no-repeat center;
+		    	}
+		    	.clifex7{
+		    		background: url("../../assets/img/20150120_ifold7.jpg") no-repeat center;
+		    	}
+		    }
+		}
+	}
+	.objective{
+		@include wg(1200px,46px);
+		border-bottom:2px solid #f55;
+		@include mt(20px);
+		@include ml(75px);
+		a{
+			display: inline-block;
+			@include wg(130px,31px);
+			font: 24px/30px Microsoft yahei;
+    		color: #f55;
+    		@include mt(10px);
+		}
+		span{
+			font: 14px/30px Microsoft yahei;
+    		color: #999;
+		}
+	}
+	.dome{
+		@include wg(1200px,48px);
+		@include ml(75px);
+		a{
+			display: inline-block;
+			@include wg(85px,26px); 	
+			@include mt(10px);
+			float: left;
+			i{
+				float: left;
+				display: block;
+				@include wg(29px,24px);
+				background: url("../../assets/img/icon_index.png") no-repeat -576px -101px;
+			}
+			em{
+				font: 18px/26px Microsoft yahei;
+    			color: #555;
+    			float: left;
+			}
+		}
+		ul{
+			@include wg(auto,24px);
+			@include mt(10px);
+			float: left;
+			li{
+				@include wg(76px,24px);
+				float: left;
+				margin: 0 3px;
+				border: 1px solid #fff;
+				a{
+					@include fs(14px);
+					text-align: center;
+					color: #000;
+					@include mt(5px);
+					&:hover{
+						color: #f66;
+					}
+				}
+				&:hover{
+					border: 1px solid #f66;
+					border-radius: 25px;
+				}
+			}
+			// li:first-child{
+			// 	 	background: #F66;
+			// 	 	border-radius: 25px;
+			// 	 	a{
+			// 	 		color: #fff;
+			// 	 	}
+			// }
+		}
+		p{
+			@include wg(42px,19px);
+			float: right;
+			@include mt(15px);
+			a{
+				@include fs(14px);
+    			color: #555;
+    			@include mt(1px);
+    			&:hover{
+    				color: #f55;
+    			}
+			}
+		}
+		.active{
+			background: #F66;
+    		color: #fff;
+    		border-radius: 20px;
+		}
+		.active:hover{
+			color: #fff;
+		}
+	}
+	.theme{
+		@include wg(1220px,202px);
+		@include ml(75px);
+		@include mt(15px);
+		position: relative;
+		ul{
+			@include wg(1220px,202px);
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			li{
+				float: left;
+			    width: 293px;
+			    height: 202px;
+			    margin: 0 10px 0 0;
+			    overflow: hidden;
+			    position: relative;
+			    .picture{
+			    	@include wg(293px,202px);
+			    	position: absolute;
+			    	top: 0;
+					left: 0;
+			    	img{
+			    		@include wg(100%,100%);
+			    		transition: all 0.5s;
+			    	}
+			    }
+			    .city_name{
+			    	@include wg(100px,30px);
+				    position: absolute;
+				    font: 24px/30px Microsoft yahei;
+				    color: #fff;
+				    top: 115px;
+				    left: 0;
+				    text-indent: .5em;
+				    text-shadow: 1px 1px 7px #000;
+			    }
+			    .scale{
+			    	@include wg(293px,41px);
+			    	position: absolute;
+			    	bottom: 0;
+			    	padding: 5px;
+				    background: #f7f7f7;
+				    border-bottom: 1px solid #ccc;
+				    p{
+				    	color: #555;
+    					font: 14px/30px Microsoft yahei;
+				    }
+			    }
+			    &:hover{
+			    	 border-bottom: 2px solid #f66;
+			    }
+			}
+			li:hover img{
+				@include mt(-15px);
+			}
+		}
+	}
+	.offer{
+		@include wg(1200px,42px);
+		@include mt(15px);
+		@include ml(75px);
+		border-bottom: 2px solid #49f;
+   	    padding: 5px 0;
+		a{
+			display: block;
+			font: 24px/30px Microsoft yahei;
+    		color: #49f;
+    		@include mt(10px);
+		}
+	}
+	.plane{
+		@include wg(1200px,48px);
+		@include mt(10px);
+		@include ml(75px);
+		a{
+			float: left;
+			display: block;
+			@include wg(85px,26px);
+			// @include mt(10px);
+			font: 18px/26px Microsoft yahei;
+    		color: #555;
+			i{
+				float: left;
+				display: block;
+				@include wg(29px,24px);
+				background: url("../../assets/img/icon_index.png") no-repeat -573px -191px;
+			}
+		}
+		ul{
+			li{
+				span{
+					display: inline-block;
+					text-align: center;
+					width: 76px;
+					height:24px;
+					a{
+						display: inline-block;
+						float: left;
+						@include fs(14px);
+						@include ml(-3px);
+					}
+				}
+
+			}
+		}
+		.trick{
+			float: left;
+			@include wg(1200px,102px);			@include mt(20px);	
+		}
+		.back{
+			width: 76px;
+			height:24px;
+			background: #49f;
+    		color: #fff;
+    		border-radius: 20px;
+		}
+		.back:hover{
+			color:#fff;
+		}
+	}
+	.horizontal{
+		@include wg(1200px,48px);
+		@include mt(130px);
+		@include ml(75px);
+		a{
+			display: inline-block;
+			@include wg(102px,26px);
+			@include mt(10px);
+			font: 18px/26px Microsoft yahei;
+   	 		color: #555;
+   	 		float:left;
+   	 		line-height: 25px;
+			i{
+				float: left;
+				display: inline-block;
+				@include wg(30px,25px);
+				background: url("../../assets/img/icon_index.png") no-repeat -575px -221px;
+			}
+		}
+		ul{
+			li{
+				@include wg(76px,24px);
+				float: left;
+				text-align: center;
+				a{
+					@include fs(14px);
+				}
+			}
+		}
+	}
+	.conte{
+		@include wg(1200px,102px);
+		border: 1px solid red;
+		@include mt(15px);
+		@include ml(75px);
+		position: relative;
+		ul{
+			@include wg(1200px,102px);
+			background: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.guide{
+		@include wg(1200px,42px);
+		border-bottom: 2px solid #77cc11;
+		@include mt(15px);
+		@include ml(75px);
+		font: 24px/30px Microsoft yahei;
+    	color: #77cc11;
+	}
+	.pic_rad{
+		@include wg(1200px,232px);
+		@include mt(10px);
+		@include ml(75px);
+		.tab_pic_show{
+			@include wg(580px,220px);
+			float: left;
+			ul{
+				    height: 220px;
+				    width: 232px;
+				    position: absolute;
+				    z-index: 2;
+				li{
+					@include wg(220px,54px);
+					 border-bottom: 1px solid #ccc;
+					a{
+						width: 200px;
+					    overflow: hidden;
+					    height: 57px;
+					    font: 14px/57px Microsoft yahei;
+					    color: #555;
+					    padding: 0 10px;
+					    display: block;
+					    overflow: hidden;
+					}
+				}
+			}
+			ol{
+				float: right;
+				@include wg(360px,220px);
+				position: relative;
+				li{
+					@include wg(360px,220px);
+					position: absolute;
+					top: 0;
+					left: 0;
+					img{
+						@include wg(360px,220px);
+						border: none;
+					}
+				}
+			}
+		}
+		.feiLv{
+			@include wg(600px,222px);
+			float: right;
+			.left{
+				@include wg(290px,222px);
+				border-bottom: 1px solid #ccc;
+				float: left;
+				background: #f7f7f7;
+				img{
+					@include wg(290px,180px);
+				}
+				p{
+					a{
+						height: 40px;
+					    font: 14px/40px Microsoft yahei;
+					    padding: 0 5px;
+					    color: #37e;
+					}
+				}
+				p:hover a{
+					color: #f55;
+				}
+				&:hover{
+					border-bottom: 2px solid #77cc11;
+				}
+			}
+			.right{
+				@include wg(290px,222px);
+				border-bottom: 1px solid #ccc;
+				float: right;
+				background: #f7f7f7;
+				img{
+					@include wg(290px,180px);
+				}
+				p{
+					a{
+						height: 40px;
+					    font: 14px/40px Microsoft yahei;
+					    padding: 0 5px;
+					    color: #37e;
+					}
+				}
+				p:hover a{
+					color: #f55;
+				}
+				&:hover{
+					border-bottom: 2px solid #77cc11;
+				}
+			}
+		}
+	}
+	.dater{
+		background: #89ca00;
+		color: #fff;
+	}
+
+	.service{
+		@include wg(1160px,61px);
+		@include mt(10px);
+		@include ml(75px);
+		padding: 20px;
+		ul{
+			@include wg(100%,100%);
+			display: flex;
+			li{
+				flex:1;
+				line-height: 60px;
+					i{
+						display: inline-block;
+						@include wg(60px,60px);
+						float: left;
+						background: url('../../assets/img/icon_index.png') no-repeat;
+						background-position: -91px -4px;
+					}
+					span{
+						display: inline-block;
+						@include wg(215px,60px);
+						float: left;
+						padding-left:15px;
+						font-size:16px;
+						color:#555;
+					}
+			}
+			li:nth-child(2) i{
+				background-position: -159px -4px;
+			}
+			li:nth-child(3) i{
+				background-position: -228px -4px;
+			}
+			li:nth-child(4) i{
+				background-position: -295px -6px;
+			}
+		}
+	}
+}
+.el-input{
+	width:354px;
+	height:32px;
+	.el-input__inner{
+		width:354px;
+		height:32px;
+	}
+}
